@@ -7,6 +7,8 @@ WORKDIR /app
 
 COPY . /app
 
-RUN mvn clean install
+# Skip tests when building
+RUN mvn clean install -DskipTests
 
-CMD ["java", "-jar", "target/your-jar-file-name.jar"]
+# Replace with your actual jar file name inside target/
+CMD ["java", "-jar", "target/whats-up-api-springboot-0.0.1-SNAPSHOT.jar"]
