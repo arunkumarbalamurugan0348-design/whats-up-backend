@@ -9,6 +9,7 @@ import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.zos.exception.ChatException;
@@ -22,6 +23,7 @@ import com.zos.service.MessageService;
 import com.zos.service.UserService;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class RealTimeChat {
 	
     @Autowired
