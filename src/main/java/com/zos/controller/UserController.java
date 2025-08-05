@@ -26,7 +26,7 @@ import com.zos.service.UserService;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/api/users")
+@RequestMapping("/users")
 public class UserController {
 	
 	@Autowired

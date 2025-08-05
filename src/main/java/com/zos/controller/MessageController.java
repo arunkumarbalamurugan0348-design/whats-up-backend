@@ -29,7 +29,7 @@ import com.zos.service.UserService;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/api/messages")
+@RequestMapping("/messages")
 public class MessageController {
 
 	@Autowired

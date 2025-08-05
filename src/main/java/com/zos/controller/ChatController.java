@@ -32,7 +32,7 @@ import com.zos.service.UserService;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/api/chats")
+@RequestMapping("/chats")
 public class ChatController {
 
 //	private ChatRepository chatRepo;
